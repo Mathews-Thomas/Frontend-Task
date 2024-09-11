@@ -15,7 +15,7 @@ function CanvasDisplay({ selectedImages, realTimeCroppedImage }) {
             <img
               src={realTimeCroppedImage}
               alt="cropped-preview"
-              className="w-48 h-48 object-cover"
+              className={`w-48 h-48 object-cover`}
             />
           </div>
         )}
@@ -26,7 +26,7 @@ function CanvasDisplay({ selectedImages, realTimeCroppedImage }) {
             <img
               src={image}
               alt={`canvas-img-${index}`}
-              className="w-48 h-48 object-cover"
+              className="w-full h-full object-cover"
             />
           </div>
         ))}

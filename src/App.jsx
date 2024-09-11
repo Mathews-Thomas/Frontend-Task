@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="flex flex-col items-center py-8 bg-blue-600 text-white min-h-screen">
-      <div className="w-full max-w-6xl flex flex-col lg:flex-row justify-between space-y-8 lg:space-y-0 lg:space-x-8">
+      <div className="w-full max-w-8xl flex flex-col lg:flex-row justify-between space-y-8 lg:space-y-0 lg:space-x-8">
         {/* Image Selector Component */}
         <div className="w-full bg-white text-gray-800 p-6 rounded-lg shadow-lg">
           <h2 className="text-2xl font-bold mb-6">Select and Resize Images</h2>
