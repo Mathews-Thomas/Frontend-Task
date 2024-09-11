@@ -32,11 +32,11 @@ function ImageSelector({ setSelectedImages, setRealTimeCroppedImage }) {
         const objectUrl = URL.createObjectURL(selectedImage);
         try {
           const croppedImage = await getCroppedImg(objectUrl, croppedAreaPixels);
-          setRealTimeCroppedImage(croppedImage); // Update real-time preview
+          setRealTimeCroppedImage(croppedImage); 
         } catch (error) {
           console.error('Error while cropping the image in real-time:', error);
         } finally {
-          URL.revokeObjectURL(objectUrl); // Clean up object URL
+          URL.revokeObjectURL(objectUrl);
         }
       }
     };
@@ -49,9 +49,9 @@ function ImageSelector({ setSelectedImages, setRealTimeCroppedImage }) {
     const objectUrl = URL.createObjectURL(selectedImage);
     try {
       const croppedImage = await getCroppedImg(objectUrl, croppedAreaPixels);
-      setSelectedImages((prev) => [...prev, croppedImage]); // Add cropped image
-      setRealTimeCroppedImage(null); // Clear real-time preview after sending
-      setSelectedImage(null); // Clear selected image after sending
+      setSelectedImages((prev) => [...prev, croppedImage]); 
+      setRealTimeCroppedImage(null); 
+      setSelectedImage(null); 
     } catch (error) {
       console.error('Error while cropping the image:', error);
     } finally {

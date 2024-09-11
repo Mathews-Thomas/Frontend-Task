@@ -4,7 +4,7 @@ import CanvasDisplay from '../src/components/CanvasDisplay';
 
 function App() {
   const [selectedImages, setSelectedImages] = useState([]);
-  const [realTimeCroppedImage, setRealTimeCroppedImage] = useState(null); // For real-time updates
+  const [realTimeCroppedImage, setRealTimeCroppedImage] = useState(null); 
 
   return (
     <div className="flex flex-col items-center py-8 bg-blue-600 text-white min-h-screen">
@@ -14,7 +14,7 @@ function App() {
           <h2 className="text-2xl font-bold mb-6">Select and Resize Images</h2>
           <ImageSelector 
             setSelectedImages={setSelectedImages}
-            setRealTimeCroppedImage={setRealTimeCroppedImage} // Pass real-time update function
+            setRealTimeCroppedImage={setRealTimeCroppedImage} 
           />
         </div>
 
@@ -23,7 +23,7 @@ function App() {
           <h2 className="text-2xl font-bold mb-6">Canvas Display</h2>
           <CanvasDisplay 
             selectedImages={selectedImages}
-            realTimeCroppedImage={realTimeCroppedImage} // Pass real-time cropped image
+            realTimeCroppedImage={realTimeCroppedImage} 
           />
         </div>
       </div>
